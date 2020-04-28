@@ -1,0 +1,70 @@
+.wrap{
+  height: 100vh;
+  background: linear-gradient(-45deg, rgba(4, 114, 124, 0.4), rgba(17, 66, 99, 0.6));
+  .header-title{
+    position: relative; /*必ず必要*/
+    z-index: 2; /*必ず必要*/
+    display: flex;
+    width: 100%;
+    height:80px;
+    // justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin: auto;
+    background-color: white;
+    .header-list {
+      display: flex;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
+      .header-logo {
+        margin-right: 20px;
+      }
+      .title { 
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+      .sign-up {
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+      .login {
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+      .sign-out {
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+      .sign-create {
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+    }
+  }
+  .content-main {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    .content-image {
+      width: 100%;
+      height: 700px;
+      .content-image__back {
+        opacity: 0.5;
+      }
+    }
+    .message {
+        position: absolute;
+        top: 180px;
+        left: 500px;
+        font-size: 20px;
+
+      } 
+  }
+}       
