@@ -26,25 +26,36 @@
         font-size: 20px;
         color: rgba(20, 19, 10, 0.637);
       }
-      .sign-up {
-        margin: 0 10px;
-        font-size: 20px;
-        color: rgba(20, 19, 10, 0.637);
+      .user_nav-grid-6 {
+        display: flex;
+        .sign-out {
+          margin: 0 10px;
+          font-size: 20px;
+          color: rgba(20, 19, 10, 0.637);
+        }
+        .sign-create {
+          margin: 0 10px;
+          font-size: 20px;
+          color: rgba(20, 19, 10, 0.637);
+        }
+        .lists {
+          margin: 0 10px;
+          font-size: 20px;
+          color: rgba(20, 19, 10, 0.637);
+        }
       }
-      .login {
-        margin: 0 10px;
-        font-size: 20px;
-        color: rgba(20, 19, 10, 0.637);
-      }
-      .sign-out {
-        margin: 0 10px;
-        font-size: 20px;
-        color: rgba(20, 19, 10, 0.637);
-      }
-      .sign-create {
-        margin: 0 10px;
-        font-size: 20px;
-        color: rgba(20, 19, 10, 0.637);
+      .grid-6 {
+        display: flex;
+        .sign-up {
+          margin: 0 10px;
+          font-size: 20px;
+          color: rgba(20, 19, 10, 0.637);
+        }
+        .login {
+          margin: 0 10px;
+          font-size: 20px;
+          color: rgba(20, 19, 10, 0.637);
+        }
       }
     }
   }
@@ -62,9 +73,11 @@
     .message {
         position: absolute;
         top: 180px;
-        left: 500px;
+        left: 700px;
         font-size: 20px;
-
+      .message-title {
+        font-size: 50px;
+      }
       } 
   }
 }       

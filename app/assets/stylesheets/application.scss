@@ -1,2 +1,91 @@
-@import "posts";
-@import "index";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ @import "reset";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
+ */
+ .header-title{
+  position: relative; /*必ず必要*/
+  z-index: 2; /*必ず必要*/
+  display: flex;
+  width: 100%;
+  height:80px;
+  // justify-content: center;
+  align-items: center;
+  text-align:center;
+  margin: auto;
+  background-color: white;
+  .header-list {
+    display: flex;
+    align-items: center;
+    a {
+      text-decoration: none;
+    }
+    .header-logo {
+      margin-right: 20px;
+    }
+    .title { 
+      margin: 0 10px;
+      font-size: 20px;
+      color: rgba(20, 19, 10, 0.637);
+    }
+    .user_nav-grid-6 {
+      display: flex;
+      .sign-out {
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+      .sign-create {
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+      .lists {
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+      .nickname {
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+    }
+    .grid-6 {
+      display: flex;
+      .sign-up {
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+      .login {
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+    }
+  }
+}
+@font-face {
+  font-family: "ipaexm";
+  src: asset_url('ipaexm.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  font-family: 'ipaexm';
+}

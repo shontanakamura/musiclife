@@ -1,0 +1,79 @@
+.wrap{
+  height: 100vh;
+  background: linear-gradient(-45deg, rgba(201, 230, 233, 0.473), rgba(129, 192, 235, 0.6));
+  .header-title{
+    position: relative; /*必ず必要*/
+    z-index: 2; /*必ず必要*/
+    display: flex;
+    width: 100%;
+    height:80px;
+    // justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin: auto;
+    background-color: white;
+    .header-list {
+      display: flex;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
+      .header-logo {
+        margin-right: 20px;
+      }
+      .title { 
+        margin: 0 10px;
+        font-size: 20px;
+        color: rgba(20, 19, 10, 0.637);
+      }
+      .user_nav-grid-6 {
+        display: flex;
+        text-decoration: none;
+        .sign-out {
+          margin: 0 10px;
+          font-size: 20px;
+          color: rgba(20, 19, 10, 0.637);
+        }
+        .sign-create {
+          margin: 0 10px;
+          font-size: 20px;
+          color: rgba(214, 203, 102, 0.637);
+        }
+        .lists {
+          margin: 0 10px;
+          font-size: 20px;
+          color: rgba(214, 203, 102, 0.637);
+        }
+      }
+      .grid-6 {
+        display: flex;
+        text-decoration: none;
+        .sign-up {
+          margin: 0 10px;
+          font-size: 20px;
+          color: rgba(20, 19, 10, 0.637);
+        }
+        .login {
+          margin: 0 10px;
+          font-size: 20px;
+          color: rgba(20, 19, 10, 0.637);
+          
+        }
+      }
+    }
+  }
+  .content__box__video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 500px;
+  height: 500px;
+  z-index: -100;
+  background: url('poster.jpg') no-repeat;
+  background-size: cover;
+  }
+  /* ----- 背景の上に表示させたいコンテンツ ----- */
+
+}
