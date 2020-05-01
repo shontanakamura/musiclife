@@ -1,0 +1,22 @@
+.wrap
+
+  .content
+    - @posts.each do |post|
+      .content-list
+        .content__title
+          %p タイトル
+          = post.title
+        .content__review
+          %p コメント
+          = post.content
+        .form__image
+        - if post.image?
+          = image_tag post.image.url 
+        .content__user
+          = link_to "投稿一覧", "/posts/:id/search"
+          
+          %br
+          = post.user.nickname
+          %br
+          = post.created_at
+

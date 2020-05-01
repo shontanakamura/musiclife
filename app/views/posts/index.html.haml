@@ -1,27 +1,18 @@
 .wrap
-  .header-title
-    .header-list
-      -# = image_tag "Music-Life.jpg", alt: "image", class: "header-logo"
-      = link_to image_tag("Music-Life", alt: "image", class: "header-logo"), "/"
-      .title
-        = link_to "このサイトについて", "/posts", class: "title"
-      -# - if user_signed_in?
-        .sign-out
-          = link_to "ログアウト", "/users/sign_out", method: :delete, class: "menu__list"
-        .sign-create
-          = link_to  "投稿する", "/posts/new", class: "menu__list"
-      -# - else
-        .sign-up
-          = link_to "新規登録"
-        .login
-          = link_to "ログイン"
+
   .content-main
     .content-image
       = image_tag "image.jpg", alt: "", class: "content-image__back", width: "100%"
     .message
-      %h1 Music Life とは？
+      .message-title
+        Music Life とは？
+      %br
       %p 思い出の曲、好きな曲,好きな歌詞など、みんなで共有しよう
+      %br
       %p まだ見ぬ曲を知り人生を変えよう
+      %br
       %p さあ、音楽の力を神よーーー
+      %br
       %p さあ、音楽の力を神よーーー
-      %p さあ、音楽の力を神よーーーm
+      %br
+      %p さあ、音楽の力を神よーーー

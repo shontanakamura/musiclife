@@ -1,0 +1,21 @@
+.login-content {
+  width: 100%;
+  height: 700px;
+  background-image :url( "#{asset_path("signup.jpg")}");
+  background-position: center;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+  margin: o auto;
+  overflow: scroll;
+  text-align: center;
+  .login {
+    text-align: center;
+    margin-top: 80px;
+    .input {
+      width: 60px;
+      height: 40px;
+    }
+  }
+
+}
+
