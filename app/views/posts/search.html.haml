@@ -15,19 +15,7 @@
         - if post.image?
           = image_tag post.image.url 
         .content__user
-          = link_to "投稿一覧", "/posts/:id/search"
           = link_to '削除', "/posts/#{post.id}", method: :delete 
           %br
           = post.created_at
 
--#   <p><%= @nickname %>さんの投稿一覧</p>
-
--#   <% @tweets.each do |tweet| %>
--#     <div class="content_post" style="background-image: url(<%= tweet.image %>);">
--#       <%= simple_format(tweet.text) %>
--#       <span class="name"><%= tweet.name %></span>
--#     </div>
--#   <% end %>
--# </div>
-  -# - if user_signed_in?
-  -#   = current_user.nickname 

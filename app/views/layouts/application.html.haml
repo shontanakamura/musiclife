@@ -8,6 +8,7 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+  
   .header-title
     .header-list
       = link_to image_tag("Music-Life", alt: "image", class: "header-logo"), "/"
@@ -22,11 +23,12 @@
           .lists
             = link_to  "投稿一覧", "/posts/show"
           .nickname
-            = link_to current_user.nickname, "/posts/:id/search"
+            = link_to current_user.nickname, "/users/#{current_user.id}"
       - else
         .grid-6
           .sign-up
             = link_to "新規登録", "/users/sign_up"
           .login
             = link_to "ログイン", "/users/sign_in"
+  #stalker
   = yield
