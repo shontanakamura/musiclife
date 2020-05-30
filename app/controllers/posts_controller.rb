@@ -7,21 +7,28 @@ class PostsController < ApplicationController
   end
   def new
     @post = Post.new
+
   end
 
   def create
     @posts = Post.create(post_params)
-    @posts.save
-    # redirect_to root_path
+    @post = Post.new(
+      content: params[:content],
+      #今回追加する操作
+      user_id: @current_user.id
+    )
   end
 
   def show
     @posts = Post.includes(:user).order("created_at DESC")
+    # @user = Post.(params[:id])
+
   end
 
   def edit
 
   end
+
   def destroy
     post = Post.find(params[:id])
     post.destroy

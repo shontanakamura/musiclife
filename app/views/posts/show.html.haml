@@ -13,10 +13,8 @@
         - if post.image?
           = image_tag post.image.url 
         .content__user
-          = link_to "投稿一覧", "/posts/:id/search"
-          
-          %br
-          = post.user.nickname
-          %br
+          = link_to "/posts/user.id/search" do
+            = post.user.nickname
+          %b
           = post.created_at
 
