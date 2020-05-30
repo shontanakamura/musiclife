@@ -69,3 +69,5 @@ gem 'mini_magick'
 gem 'jquery-rails'
 gem 'rmagick'
 gem "font-awesome-sass"
+
+
