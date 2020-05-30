@@ -22,6 +22,8 @@ class PostsController < ApplicationController
   def show
     @posts = Post.includes(:user).order("created_at DESC")
     # @user = Post.(params[:id])
+    # @comment = Comment.new
+    # @comments = @post.comments.includes(:user)
 
   end
 
@@ -34,9 +36,13 @@ class PostsController < ApplicationController
     post.destroy
   end
 
-  def search
-    @posts = Post.includes(:user).order("created_at DESC")
-  end
+  # def search
+  #   @posts = Post.includes(:user).order("created_at DESC")
+  #   # user = User.find(params[:id])
+  #   @nickname = current_user.nickname
+  #   @posts = current_user.posts
+
+  # end
 
   private
   def post_params

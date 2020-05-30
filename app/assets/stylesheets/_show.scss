@@ -8,6 +8,10 @@
   margin: o auto;
   overflow: scroll;
   text-align: center;
+  .list-of-posts {
+    font-size: 40px;
+    margin: 40px;
+  }
   &__list {
     text-align: center;
     border: solid;

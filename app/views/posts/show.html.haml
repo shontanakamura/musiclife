@@ -1,6 +1,7 @@
 .wrap
-
   .content
+    .list-of-posts
+      みんなの投稿
     - @posts.each do |post|
       .content-list
         .content__title
@@ -13,8 +14,23 @@
         - if post.image?
           = image_tag post.image.url 
         .content__user
-          = link_to "/posts/user.id/search" do
-            = post.user.nickname
-          %b
+          投稿者
+          = link_to post.user.nickname, "/users/#{post.user.id}"
+          %br
           = post.created_at
-
+      -# .container
+      -#   - if current_user
+      -#     = form_with(model: [@post, @comment], local: true) do |form| 
+      -#       = form.text_area :text, placeholder: "コメントする", rows: "2"
+      -#       = form.submit "SEND"
+      -#   - else 
+      -#     %strong
+      -#     %p ※※※ コメントの投稿には新規登録/ログインが必要です ※※
+      -# .comments
+      -#   %h4 ＜コメント一覧＞
+      -#   - if @comments
+      -#     - @comments.each do |comment|
+      -#       %p
+      -#       %strong
+      -#     = link_to comment.user.nickname, "/users/#{comment.user_id}"
+      -#     = comment.text

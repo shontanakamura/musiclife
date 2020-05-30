@@ -2,6 +2,8 @@
   .content
     .user__nickname
       = "#{@nickname} さんの投稿一覧"
+      = @nickname 
+      さんの投稿一覧
     - @posts.each do |post|
       .content-list
         .content__title
@@ -15,6 +17,9 @@
           = image_tag post.image.url 
         .content__user
           = link_to "投稿一覧", "/posts/user.id/search"
+          = link_to '削除', "/posts/#{post.id}", method: :delete 
+          %br
+          = post.created_at
           = link_to '削除', "/posts/#{post.id}", method: :delete 
           %br
           = post.created_at
