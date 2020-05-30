@@ -71,4 +71,5 @@ gem 'jquery-rails'
 gem 'rmagick'
 gem "font-awesome-sass"
 gem  " activesupport "、" > = 5.2.4.3 "
+gem "actionpack", ">= 5.2.4.3"
 
