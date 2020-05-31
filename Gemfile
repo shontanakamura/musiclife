@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'sqlite3', group: [:development, :test]
-gem 'pg', group: :production
+
 # Use Puma as the app server
 gem "puma", ">= 3.12.6"
 
