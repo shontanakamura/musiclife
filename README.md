@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# music-life DB設計
 
-Things you may want to cover:
+## usersテーブル
 
-* Ruby version
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|nickname|string|null: false|
+|user_id|integer|null: false|
 
-* System dependencies
+# Association
 
-* Configuration
+  has_many :posts
+  has_many :comments
 
-* Database creation
+## postsテーブル
 
-* Database initialization
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false|
+|content|string|null: false|
+|image|text|null: false|
+|user_id|integer|null: false|
 
-* How to run the test suite
+## commentsテーブル
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+|Column|Type|Options|
+|------|----|-------|
+|text|text|null: false|
+|post_id|integer|null: false|
+|user_id|integer|null: false|
