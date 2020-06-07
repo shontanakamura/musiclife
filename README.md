@@ -12,9 +12,8 @@
 |user_id|integer|null: false|
 
 # Association
-
-  has_many :posts
-  has_many :comments
+- has_many :posts
+- has_many :comments
 
 ## postsテーブル
 
@@ -25,6 +24,10 @@
 |image|text|null: false|
 |user_id|integer|null: false|
 
+# Association
+- belongs_to :user
+- has_many :comments
+
 ## commentsテーブル
 
 |Column|Type|Options|
@@ -32,3 +35,7 @@
 |text|text|null: false|
 |post_id|integer|null: false|
 |user_id|integer|null: false|
+
+# Association
+- belongs_to :user
+- belongs_to :post
