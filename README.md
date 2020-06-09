@@ -1,7 +1,8 @@
 # README
 
 # アプリ名　Music Life
-![musicimage](https://user-images.githubusercontent.com/63178332/84154764-7904c100-aaa2-11ea-988a-97420fa7f823.jpg)
+![musictop](https://user-images.githubusercontent.com/63178332/84161898-bb320080-aaaa-11ea-8369-1c429e0f5036.jpg)
+
 
 # 説明
 
